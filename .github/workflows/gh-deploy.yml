@@ -8,9 +8,12 @@ jobs:
     steps:
         - name: clone the repository
           uses: actions/checkout@v4
+          
         - name: install npm packages
           run: npm install
+          
         - name: run npm
           run: npm run build
+          
         - name: test npm
           run: npm run test
